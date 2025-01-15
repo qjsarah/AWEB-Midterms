@@ -1,0 +1,47 @@
+<div class="container text-center mt-5">
+  <h3>Date Pipes</h3>
+  Today's date : {{presentDate}} <br>
+  Today's date with pipe: {{presentDate | date}} <br>
+  Short Date: {{presentDate | date: 'shortDate'}} <br>
+  Full Date: {{presentDate | date: 'fullDate'}} <br>
+  Formatted Date: {{presentDate | date: 'M/dd/yyyy'}} <br>
+  Indicates the hours and minutes: {{presentDate | date: 'h:mm'}} <br> <br>
+</div>
+<div  class="container text-center mt-5">
+  <h3>Chained Pipes</h3>
+<!--CHAINED PIPES-->
+  Date with uppercase : {{presentDate | date: 'fullDate' | uppercase}} <br>
+  Date with lowercase : {{presentDate | date: 'medium' | lowercase}} <br>
+</div>
+<!--BUILT-IN PIPES-->
+<div class="container text-center mt-5"> 
+  <h3>Built-in Pipes</h3>
+  Seconds changing in Time: {{ time$ | async | date:'mediumTime' }} 
+</div>
+<!--JSON PIPE-->
+<div class="container text-center mt-5">
+  <h3>Json Pipes!</h3>
+  <p>Object: {{testObject}}</p>
+  <p>Object with JsonPipes: {{ testObject | json }}</p>
+</div>
+<!--CURRENCY PIPE-->
+<div class="container text-center mt-5">
+  <h3>Currency Pipe</h3>
+  <p>{{ price | currency:'':true}}</p>
+  <p>{{ price | currency:'INR'}}</p>
+</div>
+<!--SLICE PIPE-->
+<div class="container text-center mt-5">
+  <h2>Display all fruits: {{fruits}}</h2>
+  <h3>Start index: {{fruits | slice:2}}</h3>
+  <h4>Start and end index: {{fruits | slice:1:4}}</h4>
+  <h5>Negative index: {{fruits | slice:-2}}</h5>
+  <h6>Negative start and end index: {{fruits | slice:-4:-2}}</h6>
+</div>
+<!--DECIMAL PIPE-->
+<div class="container text-center mt-5">
+  <h3>Decimal Pipe</h3>
+  <p>{{decimalNum1 | number: '3.1'}}</p>
+  <p>{{decimalNum2 | number: '2.1-4'}}</p>
+</div>
+<router-outlet />

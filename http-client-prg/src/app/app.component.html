@@ -26,11 +26,11 @@
     </div>
 </div>
 
-<div class="container bg-dark text-light p-4 rounded mt-5">
+<div class="container text-light p-4 rounded mt-5 todolist">
     <h1 class="text-center mb-4">To Do List</h1>
-    <div *ngIf="httptodos.length > 0" class="container bg-dark text-light p-4 rounded darklist">
+    <div *ngIf="httptodos.length > 0" class="container text-light p-4 rounded">
         <ul class="list-group list-group-flush">
-            <li *ngFor="let todo of httptodos | slice:0:5" class="list-group-item bg-secondary text-light">
+            <li *ngFor="let todo of httptodos | slice:0:5" class="list-group-item bg-dark text-light">
                 {{ todo.title }}
             </li>
         </ul>        

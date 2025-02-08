@@ -12,7 +12,7 @@ import { HttpclientService } from './httpclient.service';
 })
 export class AppComponent {
   title = 'http-client-prg';
-  httpusers: any;
+  httpusers: any[]=[];
   httptodos: any[]=[];
 
   constructor(private httpclientlist: HttpclientService){

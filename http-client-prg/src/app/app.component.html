@@ -1,31 +1,33 @@
-<div class="Whole-container">
-    <h1 class="List-header">List from Main</h1>
-  
-    <div *ngIf="!httpusers">
-      <p class="Loader">Loading...</p>
+<div class="container bg-dark text-light p-4 rounded">
+    <h1 class="text-center mb-4">List from Main</h1>
+
+    <div *ngIf="!httpusers" class="text-center">
+        <p class="text-warning">Loading...</p>
     </div>
-    
+
     <div *ngIf="httpusers && httpusers.length > 0">
-      <table class="table-container">
-        <thead class="table-header">
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Website</th>
-          </tr>
-        </thead>
-        <tbody class="table-body">
-          <tr *ngFor="let user of httpusers">
-            <td>{{ user.id }}</td>
-            <td>{{ user.name }}</td>
-            <td>{{ user.username }}</td>
-            <td>{{ user.email }}</td>
-            <td>{{ user.website }}</td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="table-responsive">
+            <table class="table table-dark table-striped table-bordered text-center">
+                <thead class="thead-light">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of httpusers">
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.website }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-  </div>
+</div>
 <router-outlet />

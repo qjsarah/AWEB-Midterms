@@ -13,10 +13,14 @@ import { HttpclientService } from './httpclient.service';
 export class AppComponent {
   title = 'http-client-prg';
   httpusers: any;
+  httptodos: any[]=[];
 
   constructor(private httpclientlist: HttpclientService){
     this.httpclientlist.getUsersRemotely().subscribe((data:any)=>{
       this.httpusers = data;
+    })
+    this.httpclientlist.getTodosRemotely().subscribe((data:any)=>{
+      this.httptodos = data;
     })
   }
 }

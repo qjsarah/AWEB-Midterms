@@ -11,4 +11,7 @@ export class HttpclientService {
   getUsersRemotely(): Observable<any> {
     return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
+  getTodosRemotely(): Observable<any> {
+    return this.http.get('https://jsonplaceholder.typicode.com/todos');
+  }
 }

@@ -6,9 +6,9 @@ This repository contains materials, assignments, and reflections for the midterm
 ## Reflection Sections
 Click on each section to navigate to the respective directory.
 
-- [Midterm Lab Activity 1: Angular Pipes Demo Discussion](#activity1)
-- [Midterm Lab Activity 3: Ng Services](#activity3)
-- [Midterm Lab Activity 4: Sharing Local Data Across Components](#activity4)
+- [Midterm Lab Activity 1: Angular Pipes Demo Discussion](ngpipes-demo/src)
+- [Midterm Lab Activity 3: Ng Services](ng-pipes-app(services)/src)
+- [Midterm Lab Activity 4: Sharing Local Data Across Components](#)
 
 ## Reflections
 

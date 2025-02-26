@@ -1,0 +1,113 @@
+  .center {
+    text-align: center;
+  }
+  h1, p {
+    text-align: center;
+    color: #600020;
+    margin-top: 20px;
+  }
+  p {
+    margin-top: 5px;
+  }
+
+  .form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .slider-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  mat-slider {
+    width: 100%;
+  }
+  
+  .slider-label {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+  }
+  
+  .radio-group {
+    margin-bottom: 20px;
+  }
+  
+  .radio-label {
+    display: block;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .gender-radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 8px;
+  }
+  
+  mat-radio-button {
+    margin-right: 12px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+  }
+  .justify-center {
+    display: flex;
+    justify-content: center;
+}
+.slider-group {
+  margin-top: 5%;
+}
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+.custom-table {
+  background-color: #ffe6e6; /* Light Pink */
+}
+
+.custom-table th {
+  background-color: #600020; /* Dark Red */
+  color: white;
+}
+
+.custom-table td,
+.custom-table th {
+  border: 2px solid #b71c1c; /* Dark Red Border */
+}
+
+.custom-table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(244, 163, 179, 0.3); /* Soft Rose Tint */
+}
